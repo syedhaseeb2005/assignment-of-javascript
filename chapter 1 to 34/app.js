@@ -1111,6 +1111,293 @@
 //     document.write("Sorry you dont guess the secret num")
 // }
 
+// Question 31 to 34
+
+// Question 1
+
+// var date = new Date();
+// document.write(date)
+
+
+// Question 2
+
+// const d = new Date();
+// let month = d.getMonth();
+// document.write(month)
+
+
+// Question 3
+
+// var a = new Date();
+
+// var b = a.getMonth()
+
+// var c = a.getDay()
+
+// document.write("Today is;"+ getday(c))
+
+
+// Question 4
+
+// var funday = new Date();
+
+// if(funday.getDay() == 6 || funday.getDay() == 0){
+//     document.write('its funday')
+// }else{
+//     document.write("its not funday")
+    
+// }
+
+
+// Question 5
+
+// var day = new Date();
+// var a = day.getDate();
+
+// if(a<16){
+//     document.write('First fifteen day of month')
+// }else{
+//     document.write('it is the last day of month')
+// }
+
+// Question 6
+
+
+// Question 7
+
+// var now = new Date();
+// var time = now.getHours;
+// if(time > 12){
+//     document.write('its AM')
+// }
+// else{
+//     document.write('its PM')
+// }
+
+// Question 8
+
+// let date = new Date("2021-09-10");
+
+// // set the date to the last day of the previous month
+// date.setMonth(date.getMonth() - 1);
+// date.setDate(0);
+
+// // assign the date to a variable named laterDate
+// let laterDate = date;
+
+// // display the result
+// document.write(laterDate);
+
+
+// Question 9
+
+// var startingdate = new Date ('July 18,2015');
+
+// var Current = new Date();
+
+// var timedifferent = Current.getTime() - startingdate.getTime();
+
+// var daydifferent = Math.floor(timedifferent / (999 * 60 * 60 * 23 ))
+// document.write('Number of days past since 1st Ramadan , 2015: ' + daydifferent)
+
+
+// for practise
+
+
+// function reverse(str) {
+//         let string = ""
+//         for (let i = str.length - 1; i >= 0; i--) {
+//             // string += str[i]
+//             string = string + str[i]
+//         }
+//         return string
+//     }
+//     console.log(reverse("hello"))
 
 
 
+
+
+// const wordlength = (s)=>{
+//     const word =  s.split(" ")
+//     return word.map(str=> `${word}${word.length}`)
+// }
+// console.log(wordlength(["hi", "hello", "hey", "howdy"]))
+
+
+
+// function equal(numbers) {
+
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] >= 10) {
+//             return i;
+//         }
+//     }
+// }
+// console.log(equal([1, 5, 15, 20]))
+
+
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// var fullNames = [];
+// for (var i = 0; i < firstNames.length; i++) {
+// for (var j = 0; j < lastNames.length; j++) {
+// fullNames.push(firstNames[i] + lastNames[j]);
+// }
+// }
+// console.log(fullNames)
+
+
+// var a = ["ayan","zain","haseeb","shayan","haseeb"]
+// console.log(a)
+
+//                        for slice 
+// var b = a.slice(1,3) 
+// console.log(b)
+
+//                        for splice
+// a.splice(2,1,"anus","noman")
+// console.log(a)
+
+//                        for indexOf
+// var b = a.indexOf("haseeb")
+// console.log(b)
+
+//                        for math.ceil
+// var a =Math.ceil(2.2)
+// console.log(a)
+
+//                        for math.floor
+// var a = Math.floor(3.65)
+// console.log(a)
+
+//                        for Math.round
+
+// var a = Math.round(3.60)
+// console.log(a)
+
+// var b = Math.round(3.30)
+// console.log(b)
+
+//                        for math.random
+
+// var c = Math.floor(Math.random() *10 + 1);
+// console.log(c)
+
+//                       for string to number
+// var a = "99"
+// var num = Number(a)
+// console.log(num)
+
+//                          for parseInt 
+// var a ="49.9"
+// var num = parseInt(a)
+// console.log(num)
+
+//                         for parseFloat
+// var a = "88.8"
+// var num = parseFloat(a)
+// console.log(a)
+
+//                          for toFixed
+
+// var a = "8.959"
+// var nu
+
+//                            now date 
+// var now = new Date()
+// console.log(now.toDateString())
+
+//                        for getting day
+// var now = new Date()
+// console.log(now.getDate())
+
+//                        for getting year
+// var now = new Date()
+// console.log(now.getFullYear())
+
+//                        for getting month
+// var now = new Date()
+// console.log(now.getMonth())
+
+//                         for getting day
+// var now = new Date()
+// console.log(now.getDay())
+
+//                         for getting hours
+// var now = new Date()
+// console.log(now.getHours())
+
+//                        for getting minutes
+// var now = new Date()
+// console.log(now.getMinutes())
+
+//                        for getting second
+// var now = new Date()
+// console.log(now.getSeconds())
+
+//                      for getting millisecond
+// var now = new Date()
+// console.log(now.getMilliseconds())
+
+
+//                              set date
+// var now = new Date()
+// now.setDate(20)
+// console.log(now)
+
+//                              set year
+// var now = new Date()
+// now.setFullYear(2040)
+// console.log(now)
+
+//                              set month
+// var now = new Date()
+// now.setMonth(11)
+// console.log(now)
+
+//                              set hour
+// var now = new Date()
+// now.setHours(1)
+// console.log(now)
+
+//                             set minutes
+// var now = new Date()
+// now.setMinutes(59)
+// console.log(now)
+
+//                              set second
+// var now = new Date()
+// now.setSeconds(19)
+// console.log(now)
+
+//                           switch statement
+
+var day =5;
+
+switch (day) {
+    case 0:
+        console.log('today is sunday')
+        break;
+    case 1:
+        console.log('today is monday')
+        break;
+    case 2:
+        console.log('today is tueday')
+        break;
+    case 3:
+        console.log('today is wednesday')
+        break;
+    case 4:
+        console.log('today is thursday')
+        break;
+    case 5:
+        console.log('today is friday')
+        break;
+    case 6:
+        console.log('today is saturday')
+        break;
+
+    default: console.log("Enter a valid week day")
+        break;
+}
